@@ -6,10 +6,11 @@ module.exports = defineConfig({
     watchForFileChanges : false,
     setupNodeEvents(on, config) {
       // implement node event listeners here
-      require('cypress-mochawesome-reporter')(on);
+      require('cypress-mochawesome-reporter/plugin')(on);
 
       config.specPattern = [
         'cypress/e2e/LoginTest.cy.js',
+        'cypress/e2e/AddToCartTest.cy.js',
       ]
       return config;
     },
