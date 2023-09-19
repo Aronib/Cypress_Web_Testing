@@ -10,7 +10,7 @@ describe("Add products to the cart", ()=>{
         loginPage.userLogin("rawnak5738@gmail.com", "Aroni5588")
     })
 
-    it("Add products to the cart", ()=>{
+    it("Show Cart", ()=>{
         //loginPage.userLogin("rawnak5738@gmail.com", "Aroni5588")
         addToCart.mAddToCart()
 
