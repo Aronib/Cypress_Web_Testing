@@ -12,7 +12,8 @@ class AddToCart {
     }
     mViewCart(){
         cy.get('.showcart').click()
-        //cy.get('.message-success > div > a').click()
+        //cy.get(':nth-child(7) > .secondary > .action > span').click()
+        //cy.get('[data-bind="i18n: '/Item in Cart/'"]').should("have.text", "Item in Cart")
         cy.get('.base').should("have.text", "Shopping Cart")
     }
 }

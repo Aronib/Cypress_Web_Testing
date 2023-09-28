@@ -7,17 +7,18 @@ describe("Add products to the cart", ()=>{
     const addToCart = new AddToCart
     
     beforeEach(()=>{
-        loginPage.userLogin("rawnak5738@gmail.com", "Aroni5588")
-    })
+       loginPage.userLogin("rawnak5738@gmail.com", "Aroni5588")
+      })
 
-    it("Show Cart", ()=>{
+    it("Add products to the cart", ()=>{
         //loginPage.userLogin("rawnak5738@gmail.com", "Aroni5588")
         addToCart.mAddToCart()
 
     })
 
-    it.only("Add products to the cart", ()=>{
+    it("Show Cart ", ()=>{
         //loginPage.userLogin("rawnak5738@gmail.com", "Aroni5588")
+        cy.wait(300)
         addToCart.mViewCart()
 
     })
